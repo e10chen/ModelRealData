@@ -1,12 +1,12 @@
 package com.company;
 
- class Games {
+ class Game {
      // Fields
      private String title;
      private int releaseDate;
      private long copiesSold;
 
-      Games(String title, int releaseDate, long copiesSold) {
+      Game(String title, int releaseDate, long copiesSold) {
          this.title = title;
          this.releaseDate = releaseDate;
          this.copiesSold = copiesSold;
