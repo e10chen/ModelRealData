@@ -2,16 +2,16 @@ package com.company;
 
 public class AradeGame extends Game {
 
-    private long revenueWithoutInflation;
-    private long revenueWithInflation;
+    private double revenueWithoutInflation;
+    private double revenueWithInflation;
 
-    public AradeGame(String title, int releaseDate, long copiesSold, long revenueWithoutInflation, long revenueWithInflation) {
-        super(title, releaseDate, copiesSold);
+    public AradeGame(int rank, String title, String releaseDate, double copiesSold, double revenueWithoutInflation, double revenueWithInflation) {
+        super(rank, title, releaseDate, copiesSold);
         this.revenueWithoutInflation = revenueWithoutInflation;
         this.revenueWithInflation = revenueWithInflation;
     }
 
-    public long getRevenueWithoutInflation() {
+    public double getRevenueWithoutInflation() {
         return revenueWithoutInflation;
     }
 
@@ -19,7 +19,7 @@ public class AradeGame extends Game {
         this.revenueWithoutInflation = revenueWithoutInflation;
     }
 
-    public long getRevenueWithInflation() {
+    public double getRevenueWithInflation() {
         return revenueWithInflation;
     }
 

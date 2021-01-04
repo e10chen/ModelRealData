@@ -2,15 +2,21 @@ package com.company;
 
  class Game {
      // Fields
+     private int rank;
      private String title;
-     private int releaseDate;
-     private long copiesSold;
+     private String releaseDate;
+     private double copiesSold;
 
-      Game(String title, int releaseDate, long copiesSold) {
+      Game(int rank, String title, String releaseDate, double copiesSold) {
+         this.rank = rank;
          this.title = title;
          this.releaseDate = releaseDate;
          this.copiesSold = copiesSold;
      }
+
+     public int getRank() { return rank; }
+
+     public void setRank(int rank) { this.rank = rank; }
 
      public String getTitle() {
          return title;
@@ -20,19 +26,19 @@ package com.company;
          this.title = title;
      }
 
-     public int getReleaseDate() {
+     public String getReleaseDate() {
          return releaseDate;
      }
 
-     public void setReleaseDate(int releaseDate) {
+     public void setReleaseDate(String releaseDate) {
          this.releaseDate = releaseDate;
      }
 
-     public long getCopiesSold() {
+     public double getCopiesSold() {
          return copiesSold;
      }
 
-     public void setCopiesSold(long copiesSold) {
+     public void setCopiesSold(double copiesSold) {
          this.copiesSold = copiesSold;
      }
  }

@@ -4,14 +4,13 @@ public class PlayStation4Game extends Game {
     private String genre;
     private String developer;
     private String publisher;
-    private String ps4Exclusive;
 
-    public PlayStation4Game(String title, int releaseDate, long copiesSold, String genre, String developer, String publisher, String ps4Exclusive) {
-        super(title, releaseDate, copiesSold);
+
+    public PlayStation4Game(int rank, String title, String releaseDate, long copiesSold, String genre, String developer, String publisher) {
+        super(rank, title, releaseDate, copiesSold);
         this.genre = genre;
         this.developer = developer;
         this.publisher = publisher;
-        this.ps4Exclusive = ps4Exclusive;
     }
 
     public String getGenre() {
@@ -38,11 +37,12 @@ public class PlayStation4Game extends Game {
         this.publisher = publisher;
     }
 
-    public String getPs4Exclusive() {
-        return ps4Exclusive;
-    }
 
-    public void setPs4Exclusive(String ps4Exclusive) {
-        this.ps4Exclusive = ps4Exclusive;
-    }
+@Override
+    public String toString() {
+
+
+    return null;
+};
+
 }
