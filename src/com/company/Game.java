@@ -2,10 +2,10 @@ package com.company;
 
  class Game {
      // Fields
-     private int rank;
-     private String title;
-     private String releaseDate;
-     private double copiesSold;
+     protected int rank;
+     protected String title;
+     protected String releaseDate;
+     protected double copiesSold;
 
       Game(int rank, String title, String releaseDate, double copiesSold) {
          this.rank = rank;
@@ -14,31 +14,31 @@ package com.company;
          this.copiesSold = copiesSold;
      }
 
-     public int getRank() { return rank; }
+      int getRank() { return rank; }
 
-     public void setRank(int rank) { this.rank = rank; }
+      void setRank(int rank) { this.rank = rank; }
 
-     public String getTitle() {
+      String getTitle() {
          return title;
      }
 
-     public void setTitle(String title) {
+      void setTitle(String title) {
          this.title = title;
      }
 
-     public String getReleaseDate() {
+      String getReleaseDate() {
          return releaseDate;
      }
 
-     public void setReleaseDate(String releaseDate) {
+      void setReleaseDate(String releaseDate) {
          this.releaseDate = releaseDate;
      }
 
-     public double getCopiesSold() {
+      double getCopiesSold() {
          return copiesSold;
      }
 
-     public void setCopiesSold(double copiesSold) {
+      void setCopiesSold(double copiesSold) {
          this.copiesSold = copiesSold;
      }
  }

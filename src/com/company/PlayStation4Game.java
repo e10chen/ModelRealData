@@ -1,6 +1,7 @@
 package com.company;
 
 public class PlayStation4Game extends Game {
+
     private String genre;
     private String developer;
     private String publisher;
@@ -13,27 +14,27 @@ public class PlayStation4Game extends Game {
         this.publisher = publisher;
     }
 
-    public String getGenre() {
+     String getGenre() {
         return genre;
     }
 
-    public void setGenre(String genre) {
+     void setGenre(String genre) {
         this.genre = genre;
     }
 
-    public String getDeveloper() {
+     String getDeveloper() {
         return developer;
     }
 
-    public void setDeveloper(String developer) {
+     void setDeveloper(String developer) {
         this.developer = developer;
     }
 
-    public String getPublisher() {
+     String getPublisher() {
         return publisher;
     }
 
-    public void setPublisher(String publisher) {
+     void setPublisher(String publisher) {
         this.publisher = publisher;
     }
 
@@ -42,7 +43,7 @@ public class PlayStation4Game extends Game {
     public String toString() {
 
 
-    return null;
-};
+    return "\"" + title + "\" had a rank of #" + rank + ". It is a " + genre + " game that was developed by the " + developer + "and publish by the" + publisher + ".  It was release on " + releaseDate + " and sold up to " + copiesSold + " million copies.";
+}
 
 }
