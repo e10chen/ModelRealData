@@ -30,7 +30,7 @@ public class AradeGame extends Game {
 
     public String toString() {
 
-        return "\"" + title + "\" had a rank of #" + rank + " released on " + releaseDate + "sold up to " + copiesSold + "hardware units. Without inflation up to 1999 it made "+ revenueWithoutInflation + " billion dollars and with 2019 inflation it made "+ revenueWithInflation +" billion dollars.";
+        return "\"" + getTitle() + "\" had a rank of #" + getRank() + " released on " + getReleaseDate() + "sold up to " + getCopiesSold() + "hardware units. Without inflation up to 1999 it made "+ getRevenueWithoutInflation() + " billion dollars and with 2019 inflation it made "+ getRevenueWithInflation() +" billion dollars.";
 
     }
 

@@ -2,10 +2,10 @@ package com.company;
 
  class Game {
      // Fields
-     protected int rank;
-     protected String title;
-     protected String releaseDate;
-     protected double copiesSold;
+     private int rank;
+     private String title;
+     private String releaseDate;
+     private double copiesSold;
 
       Game(int rank, String title, String releaseDate, double copiesSold) {
          this.rank = rank;

@@ -43,7 +43,7 @@ public class PlayStation4Game extends Game {
     public String toString() {
 
 
-    return "\"" + title + "\" had a rank of #" + rank + ". It is a " + genre + " game that was developed by the " + developer + "and publish by the" + publisher + ".  It was release on " + releaseDate + " and sold up to " + copiesSold + " million copies.";
+    return "\"" + getTitle() + "\" had a rank of #" + getRank() + ". It is a " + getGenre() + " game that was developed by the " + getDeveloper() + "and publish by the" + getPublisher() + ".  It was release on " + getReleaseDate() + " and sold up to " + getCopiesSold() + " million copies.";
 }
 
 }
