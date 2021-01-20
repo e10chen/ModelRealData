@@ -1,14 +1,17 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class GameData {
 
         public static void main(String[] args) {
 
-            AradeGame aradeGame1 = new AradeGame(1,"Pac-Man", "1980", 400000, 3.5, 10.9);
-            PlayStation4Game consoleGame1 = new PlayStation4Game(1,"Grand Theft Auto V", "November 18, 2014", 20, "Action Adventure", "Rockstar North", "Rockstar Games");
+            new AradeGame(1,"Pac-Man", "1980", 400000, 3.5, 10.9);
 
-            System.out.println(aradeGame1.toString());
-            System.out.println(consoleGame1.toString());
+            String PlayStation4GameData = args[0];
+            PlayStation4Game.read(PlayStation4GameData);
+
+            Game.describeAll();
         }
 
 }
