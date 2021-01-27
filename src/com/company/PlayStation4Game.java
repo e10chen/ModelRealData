@@ -11,7 +11,7 @@ public class PlayStation4Game extends Game {
     private String publisher;
 
 
-    public PlayStation4Game(int rank, String title, String releaseDate, double copiesSold, String genre, String developer, String publisher) {
+    public PlayStation4Game(int rank, String title, double copiesSold, String releaseDate, String genre, String developer, String publisher) {
         super(rank, title, copiesSold, releaseDate);
         this.genre = genre;
         this.developer = developer;
@@ -72,13 +72,13 @@ public class PlayStation4Game extends Game {
 
         int ranking = lineScanner.nextInt();
         String title = lineScanner.next();
-        String releaseDate = lineScanner.next();
         double copiesSold = lineScanner.nextDouble();
+        String releaseDate = lineScanner.next();
         String genres = lineScanner.next();
         String developers = lineScanner.next();
         String publishers = lineScanner.next();
 
-        Game game = new PlayStation4Game(ranking, title, releaseDate, copiesSold, genres, developers, publishers);
+        Game game = new PlayStation4Game(ranking, title, copiesSold, releaseDate, genres, developers, publishers);
     }
 
     }
